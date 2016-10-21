@@ -1,6 +1,7 @@
-# vue2
+# vue2.0  
 
-> A Vue.js project
+A Vue.js project
+https://luvstory.github.io/2048
 
 ## Build Setup
 
