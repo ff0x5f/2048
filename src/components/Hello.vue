@@ -19,9 +19,7 @@
         class="ceil"
         v-bind:class="{ 'trans': isA, 'visib': item[0], 'color': item[0]>8, 'font': item[0].toString().length>3 }"
         v-bind:style="{background: fn[item[0]], transform: `translate3d(${item[1]*wid}px, ${item[2]*wid}px, 0)`}"
-      >
-        {{ item[0]!=unit[0] ? item[0] : '' }}
-      </div>
+      >{{ item[0]!=unit[0] ? item[0] : '' }}</div>
     </div>
   </div>
 </div>
@@ -293,15 +291,16 @@ export default {
 
 .x{
   position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -@wid*2-4*8px;
   padding: 8px;
   width: @wid*4 + 8*8px;
   height: @wid*4 + 8*8px;
 }
 
 .hello{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 90%;
   .back{
     .x;
