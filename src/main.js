@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
 Vue.use(VueRouter)
 // Vue.use(VueResource)
 const router = new VueRouter({
+  base: '/dist/',
   mode: 'history',
   routes: routerConfig
 })
